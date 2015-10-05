@@ -31,4 +31,9 @@ git clean -f -d
 cd ../../../system/core
 git reset --hard
 git clean -f -d
-cd ../..
+
+# build
+cd ../../build
+git reset --hard
+git clean -f -d
+cd ..
