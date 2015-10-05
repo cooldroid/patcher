@@ -43,6 +43,11 @@ wget https://github.com/sultanxda/android_packages_apps_Trebuchet/commit/85657ce
 patch -p1 < 85657ceea63d4e85b1115679afe08ca0759f832d.patch
 git clean -f -d
 
+# build
+git reset --hard
+wget https://github.com/judas77/patches/raw/master/build/0001-chromium-prebuilt-patch.patch && patch -p1 < 0001-chromium-prebuilt-patch.patch
+git clean -f -d
+
 # system/core:
 cd ../../../system/core
 git reset --hard
